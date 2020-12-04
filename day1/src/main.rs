@@ -10,7 +10,7 @@ fn main() -> std::io::Result<()> {
         .flatten()
         .collect::<Vec<i32>>();
 
-    println!(">> a * b * c = {}", nums.iter().fold(1, |acc, x| acc * x));
+    println!(">> a * b * c = {}", nums.iter().product::<i32>());
 
     Ok(())
 }
